@@ -1,0 +1,113 @@
+/* color variables */
+$accent-color: #eaf2f5;
+$primary-text-color: #141414;
+$secondary-text-color: #007676;
+$light-text-color: #fff;
+$primary-color: #fff;
+$secondary-color: #007676;
+$alpha-secondary-color: rgba(0, 118, 118, 0.2);
+$discount-color: #e71a1c;
+$card-hover-bg-color: #f9f9f9;
+$border-color: #f9f9f9;
+$box-shadow-color: $accent-color;
+$shadow: rgba(0, 0, 0, 0.05);
+$box-shadow: rgba(0, 0, 0, 0.25);
+$discount-banner-background-overlay: linear-gradient(rgba(0, 118, 118, 0.8), rgba(0, 118, 118, 0.8));
+$phone-app-shadow: #c7e1eb;
+$alpha-primary-color: rgba(255, 255, 255, 0.5);
+$rating-color: #ffa800;
+
+/* transition curves */
+$transition-curve: cubic-bezier(0.36, -0.21, 0.16, 1.97);
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: $primary-text-color;
+    background: $primary-color;
+    font-size: 16px;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+//mixin
+@mixin mq($width){
+    @media only screen and (max-width:$width) {
+        @content;
+    }
+}
+
+
+.search {
+    position: relative;
+    width: 20vw;
+    min-width: 150px;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    .search-input{
+        width: 100%;
+        height: 100%;
+        background: $primary-color;
+        border: none;
+        padding: 1rem;
+        outline: none;
+        font-size: .9rem;
+    }
+    .search-btn{
+        position: absolute;
+        border: none;
+        right: 0;
+        width: 3rem;
+        height: 100%;
+        background: $primary-color;
+        text-align: center;
+        cursor: pointer;
+        color: $secondary-text-color;
+    }
+}
+
+.btn{
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: .3rem;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: $light-text-color;
+    background: $secondary-color;
+    text-transform: capitalize;
+    cursor: pointer;
+    &.transparent{
+        background: transparent;
+        border: .1rem solid $secondary-color;
+        color: $secondary-text-color;
+    }
+}
+
+@include mq(567px) {
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 14px;
+    }
+}
+
+[data-aos="fade-in"].aos-animate {
+    transform: none !important;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}

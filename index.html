@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Me</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header> 
+        <!-- header will wrap our navbar and hero section -->
+        <!-- navbar -->
+        <nav class="navbar">
+            <button type="button" class="toggle-btn btn" id="toggle"><i class="fas fa-bars"></i></button>
+             <!-- logo -->
+             <a href="/" class="logo">
+                 <img src="./assets/img/logo.avif" alt="Logo">
+             </a>
+             <div class="collapse-menu">
+                 <!-- ul -->
+                 <ul class="links-container">
+                     <li class="link-items"><a href="#" class="links">Menu</a></li>
+                     <li class="link-items"><a href="#" class="links">Order</a></li>
+                     <li class="link-items"><a href="#" class="links">Restaurants</a></li>
+                     <li class="link-items"><a href="#" class="links">Track Order</a></li>
+                 </ul>
+                 <!-- search box -->
+                 <div class="search-wrapper">
+                     <!-- search box -->
+                     <div class="search">
+                         <input type="text" class="search-input" placeholder="Search Restaurants, Cuisine..... ">
+                         <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                     </div>
+                     <!-- cart btn -->
+                     <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                 </div>
+             </div>
+            <a href="#" class="cart-sm cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+
+    <!-- main section -->
+    <main id="main-sec">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-heading">Eat the best</h1>
+                <p class="hero-desc">Explore and understand the culture more by tasting the amazing dishes of that culture</p>
+    
+                <div class="search location">
+                    <input type="text" class="search-input" placeholder="Search Restaurants, Cuisine..... ">
+                    <button class="search-btn locate-btn"><i class="fa-solid fa-location-crosshairs"></i></button>
+                </div>
+    
+                <div class="hero-action-btn-container">
+                    <button class="btn">Order Food</button>
+                    <p class="or">or</p>
+                    <button class="btn transparent">Make reservation</button>
+                </div>
+            </div>
+            <div class="hero-img-container">
+                <div class="hero-img-bg" data-aos="fade-in" data-aos-delay="700">
+                    <div class="ellipse"></div>
+                    <div class="ellipse"></div>
+                    <div class="ellipse"></div>
+                </div>
+                <div class="forground-elements">
+                    <img src="./assets/img/food-thali.avif" class="hero-img" alt="" data-aos="zoom-in" data-aos-delay="0">
+                    <img src="./assets/img/hero-burger.png" class="hero-img" alt="" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="./assets/img/hero-pizza.png" class="hero-img" alt="" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="review-box" data-aos="zoom-in" data-aos-delay="450">
+                        <div class="reviewer-info" data-aos="zoom-out" data-aos-delay="600">
+                            <img src="./assets/img/user-img.jpeg" class="reviewer-img" alt="">
+                            <div class="reviewer">
+                                <div class="reviewer-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <p>4.7</p>
+                                </div>
+                                <h2 class="reviewer-name" data-aos="zoom-out" data-aos-delay="650">KRISH</h2>
+                            </div>
+                        </div>
+                        <div class="review-body">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p class="review">The restaurant was good. Staff was very welcoming and the food.... well no words for it. Chef was amazing and the view of sky from the top deck was fabulous.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+</html>
